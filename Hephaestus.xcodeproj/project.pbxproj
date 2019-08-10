@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C32ACFC422FF32ED000BEDC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32ACFC322FF32ED000BEDC7 /* AppDelegate.swift */; };
+		C32ACFC622FF32ED000BEDC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32ACFC522FF32ED000BEDC7 /* ViewController.swift */; };
+		C32ACFC822FF32EE000BEDC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C32ACFC722FF32EE000BEDC7 /* Assets.xcassets */; };
+		C32ACFCB22FF32EE000BEDC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C32ACFC922FF32EE000BEDC7 /* Main.storyboard */; };
+		C32ACFD722FF32EE000BEDC7 /* HephaestusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32ACFD622FF32EE000BEDC7 /* HephaestusTests.swift */; };
+		C32ACFE222FF32EE000BEDC7 /* HephaestusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32ACFE122FF32EE000BEDC7 /* HephaestusUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C32ACFD322FF32EE000BEDC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C32ACFB822FF32ED000BEDC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C32ACFBF22FF32ED000BEDC7;
+			remoteInfo = Hephaestus;
+		};
+		C32ACFDE22FF32EE000BEDC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C32ACFB822FF32ED000BEDC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C32ACFBF22FF32ED000BEDC7;
+			remoteInfo = Hephaestus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C32ACFC022FF32ED000BEDC7 /* Hephaestus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hephaestus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C32ACFC322FF32ED000BEDC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C32ACFC522FF32ED000BEDC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C32ACFC722FF32EE000BEDC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C32ACFCA22FF32EE000BEDC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C32ACFCC22FF32EE000BEDC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C32ACFCD22FF32EE000BEDC7 /* Hephaestus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hephaestus.entitlements; sourceTree = "<group>"; };
+		C32ACFD222FF32EE000BEDC7 /* HephaestusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HephaestusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C32ACFD622FF32EE000BEDC7 /* HephaestusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HephaestusTests.swift; sourceTree = "<group>"; };
+		C32ACFD822FF32EE000BEDC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C32ACFDD22FF32EE000BEDC7 /* HephaestusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HephaestusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C32ACFE122FF32EE000BEDC7 /* HephaestusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HephaestusUITests.swift; sourceTree = "<group>"; };
+		C32ACFE322FF32EE000BEDC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C32ACFBD22FF32ED000BEDC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C32ACFCF22FF32EE000BEDC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C32ACFDA22FF32EE000BEDC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C32ACFB722FF32ED000BEDC7 = {
+			isa = PBXGroup;
+			children = (
+				C32ACFC222FF32ED000BEDC7 /* Hephaestus */,
+				C32ACFD522FF32EE000BEDC7 /* HephaestusTests */,
+				C32ACFE022FF32EE000BEDC7 /* HephaestusUITests */,
+				C32ACFC122FF32ED000BEDC7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C32ACFC122FF32ED000BEDC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C32ACFC022FF32ED000BEDC7 /* Hephaestus.app */,
+				C32ACFD222FF32EE000BEDC7 /* HephaestusTests.xctest */,
+				C32ACFDD22FF32EE000BEDC7 /* HephaestusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C32ACFC222FF32ED000BEDC7 /* Hephaestus */ = {
+			isa = PBXGroup;
+			children = (
+				C32ACFC322FF32ED000BEDC7 /* AppDelegate.swift */,
+				C32ACFC522FF32ED000BEDC7 /* ViewController.swift */,
+				C32ACFC722FF32EE000BEDC7 /* Assets.xcassets */,
+				C32ACFC922FF32EE000BEDC7 /* Main.storyboard */,
+				C32ACFCC22FF32EE000BEDC7 /* Info.plist */,
+				C32ACFCD22FF32EE000BEDC7 /* Hephaestus.entitlements */,
+			);
+			path = Hephaestus;
+			sourceTree = "<group>";
+		};
+		C32ACFD522FF32EE000BEDC7 /* HephaestusTests */ = {
+			isa = PBXGroup;
+			children = (
+				C32ACFD622FF32EE000BEDC7 /* HephaestusTests.swift */,
+				C32ACFD822FF32EE000BEDC7 /* Info.plist */,
+			);
+			path = HephaestusTests;
+			sourceTree = "<group>";
+		};
+		C32ACFE022FF32EE000BEDC7 /* HephaestusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C32ACFE122FF32EE000BEDC7 /* HephaestusUITests.swift */,
+				C32ACFE322FF32EE000BEDC7 /* Info.plist */,
+			);
+			path = HephaestusUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C32ACFBF22FF32ED000BEDC7 /* Hephaestus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C32ACFE622FF32EE000BEDC7 /* Build configuration list for PBXNativeTarget "Hephaestus" */;
+			buildPhases = (
+				C32ACFBC22FF32ED000BEDC7 /* Sources */,
+				C32ACFBD22FF32ED000BEDC7 /* Frameworks */,
+				C32ACFBE22FF32ED000BEDC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hephaestus;
+			productName = Hephaestus;
+			productReference = C32ACFC022FF32ED000BEDC7 /* Hephaestus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C32ACFD122FF32EE000BEDC7 /* HephaestusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C32ACFE922FF32EE000BEDC7 /* Build configuration list for PBXNativeTarget "HephaestusTests" */;
+			buildPhases = (
+				C32ACFCE22FF32EE000BEDC7 /* Sources */,
+				C32ACFCF22FF32EE000BEDC7 /* Frameworks */,
+				C32ACFD022FF32EE000BEDC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C32ACFD422FF32EE000BEDC7 /* PBXTargetDependency */,
+			);
+			name = HephaestusTests;
+			productName = HephaestusTests;
+			productReference = C32ACFD222FF32EE000BEDC7 /* HephaestusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C32ACFDC22FF32EE000BEDC7 /* HephaestusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C32ACFEC22FF32EE000BEDC7 /* Build configuration list for PBXNativeTarget "HephaestusUITests" */;
+			buildPhases = (
+				C32ACFD922FF32EE000BEDC7 /* Sources */,
+				C32ACFDA22FF32EE000BEDC7 /* Frameworks */,
+				C32ACFDB22FF32EE000BEDC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C32ACFDF22FF32EE000BEDC7 /* PBXTargetDependency */,
+			);
+			name = HephaestusUITests;
+			productName = HephaestusUITests;
+			productReference = C32ACFDD22FF32EE000BEDC7 /* HephaestusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C32ACFB822FF32ED000BEDC7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Douglas Edan";
+				TargetAttributes = {
+					C32ACFBF22FF32ED000BEDC7 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					C32ACFD122FF32EE000BEDC7 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = C32ACFBF22FF32ED000BEDC7;
+					};
+					C32ACFDC22FF32EE000BEDC7 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = C32ACFBF22FF32ED000BEDC7;
+					};
+				};
+			};
+			buildConfigurationList = C32ACFBB22FF32ED000BEDC7 /* Build configuration list for PBXProject "Hephaestus" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C32ACFB722FF32ED000BEDC7;
+			productRefGroup = C32ACFC122FF32ED000BEDC7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C32ACFBF22FF32ED000BEDC7 /* Hephaestus */,
+				C32ACFD122FF32EE000BEDC7 /* HephaestusTests */,
+				C32ACFDC22FF32EE000BEDC7 /* HephaestusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C32ACFBE22FF32ED000BEDC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C32ACFC822FF32EE000BEDC7 /* Assets.xcassets in Resources */,
+				C32ACFCB22FF32EE000BEDC7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C32ACFD022FF32EE000BEDC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C32ACFDB22FF32EE000BEDC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C32ACFBC22FF32ED000BEDC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C32ACFC622FF32ED000BEDC7 /* ViewController.swift in Sources */,
+				C32ACFC422FF32ED000BEDC7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C32ACFCE22FF32EE000BEDC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C32ACFD722FF32EE000BEDC7 /* HephaestusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C32ACFD922FF32EE000BEDC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C32ACFE222FF32EE000BEDC7 /* HephaestusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C32ACFD422FF32EE000BEDC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C32ACFBF22FF32ED000BEDC7 /* Hephaestus */;
+			targetProxy = C32ACFD322FF32EE000BEDC7 /* PBXContainerItemProxy */;
+		};
+		C32ACFDF22FF32EE000BEDC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C32ACFBF22FF32ED000BEDC7 /* Hephaestus */;
+			targetProxy = C32ACFDE22FF32EE000BEDC7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C32ACFC922FF32EE000BEDC7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C32ACFCA22FF32EE000BEDC7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C32ACFE422FF32EE000BEDC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C32ACFE522FF32EE000BEDC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C32ACFE722FF32EE000BEDC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Hephaestus/Hephaestus.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Hephaestus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.douglasedan.Hephaestus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C32ACFE822FF32EE000BEDC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Hephaestus/Hephaestus.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Hephaestus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.douglasedan.Hephaestus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C32ACFEA22FF32EE000BEDC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HephaestusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.douglasedan.HephaestusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hephaestus.app/Contents/MacOS/Hephaestus";
+			};
+			name = Debug;
+		};
+		C32ACFEB22FF32EE000BEDC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HephaestusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.douglasedan.HephaestusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hephaestus.app/Contents/MacOS/Hephaestus";
+			};
+			name = Release;
+		};
+		C32ACFED22FF32EE000BEDC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HephaestusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.douglasedan.HephaestusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Hephaestus;
+			};
+			name = Debug;
+		};
+		C32ACFEE22FF32EE000BEDC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = HephaestusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.douglasedan.HephaestusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Hephaestus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C32ACFBB22FF32ED000BEDC7 /* Build configuration list for PBXProject "Hephaestus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C32ACFE422FF32EE000BEDC7 /* Debug */,
+				C32ACFE522FF32EE000BEDC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C32ACFE622FF32EE000BEDC7 /* Build configuration list for PBXNativeTarget "Hephaestus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C32ACFE722FF32EE000BEDC7 /* Debug */,
+				C32ACFE822FF32EE000BEDC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C32ACFE922FF32EE000BEDC7 /* Build configuration list for PBXNativeTarget "HephaestusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C32ACFEA22FF32EE000BEDC7 /* Debug */,
+				C32ACFEB22FF32EE000BEDC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C32ACFEC22FF32EE000BEDC7 /* Build configuration list for PBXNativeTarget "HephaestusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C32ACFED22FF32EE000BEDC7 /* Debug */,
+				C32ACFEE22FF32EE000BEDC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C32ACFB822FF32ED000BEDC7 /* Project object */;
+}
