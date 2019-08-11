@@ -7,63 +7,85 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C32ACFC422FF32ED000BEDC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32ACFC322FF32ED000BEDC7 /* AppDelegate.swift */; };
-		C32ACFC622FF32ED000BEDC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32ACFC522FF32ED000BEDC7 /* ViewController.swift */; };
-		C32ACFC822FF32EE000BEDC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C32ACFC722FF32EE000BEDC7 /* Assets.xcassets */; };
-		C32ACFCB22FF32EE000BEDC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C32ACFC922FF32EE000BEDC7 /* Main.storyboard */; };
-		C32ACFD722FF32EE000BEDC7 /* HephaestusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32ACFD622FF32EE000BEDC7 /* HephaestusTests.swift */; };
-		C32ACFE222FF32EE000BEDC7 /* HephaestusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32ACFE122FF32EE000BEDC7 /* HephaestusUITests.swift */; };
+		C31731FB2294EAA8007FED62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31731FA2294EAA8007FED62 /* AppDelegate.swift */; };
+		C31731FD2294EAA8007FED62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31731FC2294EAA8007FED62 /* ViewController.swift */; };
+		C31731FF2294EAA9007FED62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C31731FE2294EAA9007FED62 /* Assets.xcassets */; };
+		C31732022294EAA9007FED62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C31732002294EAA9007FED62 /* Main.storyboard */; };
+		C317320E2294EAA9007FED62 /* HephaestusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C317320D2294EAA9007FED62 /* HephaestusTests.swift */; };
+		C31732192294EAA9007FED62 /* HephaestusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31732182294EAA9007FED62 /* HephaestusUITests.swift */; };
+		C3347F15229A987A00C54954 /* CorePatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3347F14229A987A00C54954 /* CorePatcher.swift */; };
+		C3347F18229A9BBE00C54954 /* libusersupport.mpack in Resources */ = {isa = PBXBuildFile; fileRef = C317322C22950CF6007FED62 /* libusersupport.mpack */; };
+		C3347F19229A9BBE00C54954 /* osxinjector.mpack in Resources */ = {isa = PBXBuildFile; fileRef = C317322D22950CF6007FED62 /* osxinjector.mpack */; };
+		C385D19822D10DD600BBFA77 /* osxsubstrate.mpack in Resources */ = {isa = PBXBuildFile; fileRef = C385D19722D10DD600BBFA77 /* osxsubstrate.mpack */; };
+		C385D19A22D2370100BBFA77 /* secureboot.mpack in Resources */ = {isa = PBXBuildFile; fileRef = C385D19922D236F400BBFA77 /* secureboot.mpack */; };
+		C385D1D422D23B9900BBFA77 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = C385D1D322D23B9800BBFA77 /* title.png */; };
+		C3D64158229D98ED00F0B5F9 /* CoreLevelCompatibilityLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D64157229D98ED00F0B5F9 /* CoreLevelCompatibilityLayer.swift */; };
+		C3DB6C702298040E00267C9C /* ButtonPlatform_Restore.png in Resources */ = {isa = PBXBuildFile; fileRef = C3DB6C6C2298040E00267C9C /* ButtonPlatform_Restore.png */; };
+		C3DB6C722298040E00267C9C /* ButtonPlatform_Start.png in Resources */ = {isa = PBXBuildFile; fileRef = C3DB6C6E2298040E00267C9C /* ButtonPlatform_Start.png */; };
+		C3DB6C76229804D500267C9C /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C3DB6C75229804D500267C9C /* logo.png */; };
+		C3DB6C7822998F6600267C9C /* Launchctl_mgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DB6C7722998F6600267C9C /* Launchctl_mgr.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C32ACFD322FF32EE000BEDC7 /* PBXContainerItemProxy */ = {
+		C317320A2294EAA9007FED62 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C32ACFB822FF32ED000BEDC7 /* Project object */;
+			containerPortal = C31731EF2294EAA8007FED62 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C32ACFBF22FF32ED000BEDC7;
+			remoteGlobalIDString = C31731F62294EAA8007FED62;
 			remoteInfo = Hephaestus;
 		};
-		C32ACFDE22FF32EE000BEDC7 /* PBXContainerItemProxy */ = {
+		C31732152294EAA9007FED62 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = C32ACFB822FF32ED000BEDC7 /* Project object */;
+			containerPortal = C31731EF2294EAA8007FED62 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C32ACFBF22FF32ED000BEDC7;
+			remoteGlobalIDString = C31731F62294EAA8007FED62;
 			remoteInfo = Hephaestus;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C32ACFC022FF32ED000BEDC7 /* Hephaestus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hephaestus.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C32ACFC322FF32ED000BEDC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C32ACFC522FF32ED000BEDC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C32ACFC722FF32EE000BEDC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C32ACFCA22FF32EE000BEDC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C32ACFCC22FF32EE000BEDC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C32ACFCD22FF32EE000BEDC7 /* Hephaestus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hephaestus.entitlements; sourceTree = "<group>"; };
-		C32ACFD222FF32EE000BEDC7 /* HephaestusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HephaestusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C32ACFD622FF32EE000BEDC7 /* HephaestusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HephaestusTests.swift; sourceTree = "<group>"; };
-		C32ACFD822FF32EE000BEDC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C32ACFDD22FF32EE000BEDC7 /* HephaestusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HephaestusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C32ACFE122FF32EE000BEDC7 /* HephaestusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HephaestusUITests.swift; sourceTree = "<group>"; };
-		C32ACFE322FF32EE000BEDC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C31731F72294EAA8007FED62 /* Hephaestus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hephaestus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C31731FA2294EAA8007FED62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C31731FC2294EAA8007FED62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C31731FE2294EAA9007FED62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C31732012294EAA9007FED62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C31732032294EAA9007FED62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C31732042294EAA9007FED62 /* Hephaestus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hephaestus.entitlements; sourceTree = "<group>"; };
+		C31732092294EAA9007FED62 /* HephaestusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HephaestusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C317320D2294EAA9007FED62 /* HephaestusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HephaestusTests.swift; sourceTree = "<group>"; };
+		C317320F2294EAA9007FED62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C31732142294EAA9007FED62 /* HephaestusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HephaestusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C31732182294EAA9007FED62 /* HephaestusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HephaestusUITests.swift; sourceTree = "<group>"; };
+		C317321A2294EAA9007FED62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C317322C22950CF6007FED62 /* libusersupport.mpack */ = {isa = PBXFileReference; lastKnownFileType = file; path = libusersupport.mpack; sourceTree = "<group>"; };
+		C317322D22950CF6007FED62 /* osxinjector.mpack */ = {isa = PBXFileReference; lastKnownFileType = file; path = osxinjector.mpack; sourceTree = "<group>"; };
+		C3347F14229A987A00C54954 /* CorePatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorePatcher.swift; sourceTree = "<group>"; };
+		C385D19722D10DD600BBFA77 /* osxsubstrate.mpack */ = {isa = PBXFileReference; lastKnownFileType = file; path = osxsubstrate.mpack; sourceTree = "<group>"; };
+		C385D19922D236F400BBFA77 /* secureboot.mpack */ = {isa = PBXFileReference; lastKnownFileType = file; path = secureboot.mpack; sourceTree = "<group>"; };
+		C385D1D322D23B9800BBFA77 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
+		C3D64157229D98ED00F0B5F9 /* CoreLevelCompatibilityLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CoreLevelCompatibilityLayer.swift; path = "../../Swift-CoreLevelCompatibilityLayer/CoreLevelCompatibilityLayer.swift"; sourceTree = "<group>"; };
+		C3DB6C6C2298040E00267C9C /* ButtonPlatform_Restore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonPlatform_Restore.png; sourceTree = "<group>"; };
+		C3DB6C6E2298040E00267C9C /* ButtonPlatform_Start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonPlatform_Start.png; sourceTree = "<group>"; };
+		C3DB6C75229804D500267C9C /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		C3DB6C7722998F6600267C9C /* Launchctl_mgr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launchctl_mgr.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C32ACFBD22FF32ED000BEDC7 /* Frameworks */ = {
+		C31731F42294EAA8007FED62 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C32ACFCF22FF32EE000BEDC7 /* Frameworks */ = {
+		C31732062294EAA9007FED62 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C32ACFDA22FF32EE000BEDC7 /* Frameworks */ = {
+		C31732112294EAA9007FED62 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -73,53 +95,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C32ACFB722FF32ED000BEDC7 = {
+		C31731EE2294EAA8007FED62 = {
 			isa = PBXGroup;
 			children = (
-				C32ACFC222FF32ED000BEDC7 /* Hephaestus */,
-				C32ACFD522FF32EE000BEDC7 /* HephaestusTests */,
-				C32ACFE022FF32EE000BEDC7 /* HephaestusUITests */,
-				C32ACFC122FF32ED000BEDC7 /* Products */,
+				C31731F92294EAA8007FED62 /* Hephaestus */,
+				C317320C2294EAA9007FED62 /* HephaestusTests */,
+				C31732172294EAA9007FED62 /* HephaestusUITests */,
+				C31731F82294EAA8007FED62 /* Products */,
+				C317322C22950CF6007FED62 /* libusersupport.mpack */,
+				C317322D22950CF6007FED62 /* osxinjector.mpack */,
+				C385D19722D10DD600BBFA77 /* osxsubstrate.mpack */,
+				C385D19922D236F400BBFA77 /* secureboot.mpack */,
+				C3DB6C6C2298040E00267C9C /* ButtonPlatform_Restore.png */,
+				C3DB6C6E2298040E00267C9C /* ButtonPlatform_Start.png */,
+				C3DB6C75229804D500267C9C /* logo.png */,
+				C385D1D322D23B9800BBFA77 /* title.png */,
 			);
 			sourceTree = "<group>";
 		};
-		C32ACFC122FF32ED000BEDC7 /* Products */ = {
+		C31731F82294EAA8007FED62 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C32ACFC022FF32ED000BEDC7 /* Hephaestus.app */,
-				C32ACFD222FF32EE000BEDC7 /* HephaestusTests.xctest */,
-				C32ACFDD22FF32EE000BEDC7 /* HephaestusUITests.xctest */,
+				C31731F72294EAA8007FED62 /* Hephaestus.app */,
+				C31732092294EAA9007FED62 /* HephaestusTests.xctest */,
+				C31732142294EAA9007FED62 /* HephaestusUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C32ACFC222FF32ED000BEDC7 /* Hephaestus */ = {
+		C31731F92294EAA8007FED62 /* Hephaestus */ = {
 			isa = PBXGroup;
 			children = (
-				C32ACFC322FF32ED000BEDC7 /* AppDelegate.swift */,
-				C32ACFC522FF32ED000BEDC7 /* ViewController.swift */,
-				C32ACFC722FF32EE000BEDC7 /* Assets.xcassets */,
-				C32ACFC922FF32EE000BEDC7 /* Main.storyboard */,
-				C32ACFCC22FF32EE000BEDC7 /* Info.plist */,
-				C32ACFCD22FF32EE000BEDC7 /* Hephaestus.entitlements */,
+				C31731FA2294EAA8007FED62 /* AppDelegate.swift */,
+				C31731FC2294EAA8007FED62 /* ViewController.swift */,
+				C3DB6C7722998F6600267C9C /* Launchctl_mgr.swift */,
+				C31731FE2294EAA9007FED62 /* Assets.xcassets */,
+				C31732002294EAA9007FED62 /* Main.storyboard */,
+				C31732032294EAA9007FED62 /* Info.plist */,
+				C3D64157229D98ED00F0B5F9 /* CoreLevelCompatibilityLayer.swift */,
+				C31732042294EAA9007FED62 /* Hephaestus.entitlements */,
+				C3347F14229A987A00C54954 /* CorePatcher.swift */,
 			);
 			path = Hephaestus;
 			sourceTree = "<group>";
 		};
-		C32ACFD522FF32EE000BEDC7 /* HephaestusTests */ = {
+		C317320C2294EAA9007FED62 /* HephaestusTests */ = {
 			isa = PBXGroup;
 			children = (
-				C32ACFD622FF32EE000BEDC7 /* HephaestusTests.swift */,
-				C32ACFD822FF32EE000BEDC7 /* Info.plist */,
+				C317320D2294EAA9007FED62 /* HephaestusTests.swift */,
+				C317320F2294EAA9007FED62 /* Info.plist */,
 			);
 			path = HephaestusTests;
 			sourceTree = "<group>";
 		};
-		C32ACFE022FF32EE000BEDC7 /* HephaestusUITests */ = {
+		C31732172294EAA9007FED62 /* HephaestusUITests */ = {
 			isa = PBXGroup;
 			children = (
-				C32ACFE122FF32EE000BEDC7 /* HephaestusUITests.swift */,
-				C32ACFE322FF32EE000BEDC7 /* Info.plist */,
+				C31732182294EAA9007FED62 /* HephaestusUITests.swift */,
+				C317321A2294EAA9007FED62 /* Info.plist */,
 			);
 			path = HephaestusUITests;
 			sourceTree = "<group>";
@@ -127,13 +160,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C32ACFBF22FF32ED000BEDC7 /* Hephaestus */ = {
+		C31731F62294EAA8007FED62 /* Hephaestus */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C32ACFE622FF32EE000BEDC7 /* Build configuration list for PBXNativeTarget "Hephaestus" */;
+			buildConfigurationList = C317321D2294EAA9007FED62 /* Build configuration list for PBXNativeTarget "Hephaestus" */;
 			buildPhases = (
-				C32ACFBC22FF32ED000BEDC7 /* Sources */,
-				C32ACFBD22FF32ED000BEDC7 /* Frameworks */,
-				C32ACFBE22FF32ED000BEDC7 /* Resources */,
+				C31731F32294EAA8007FED62 /* Sources */,
+				C31731F42294EAA8007FED62 /* Frameworks */,
+				C31731F52294EAA8007FED62 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -141,69 +174,74 @@
 			);
 			name = Hephaestus;
 			productName = Hephaestus;
-			productReference = C32ACFC022FF32ED000BEDC7 /* Hephaestus.app */;
+			productReference = C31731F72294EAA8007FED62 /* Hephaestus.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C32ACFD122FF32EE000BEDC7 /* HephaestusTests */ = {
+		C31732082294EAA9007FED62 /* HephaestusTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C32ACFE922FF32EE000BEDC7 /* Build configuration list for PBXNativeTarget "HephaestusTests" */;
+			buildConfigurationList = C31732202294EAA9007FED62 /* Build configuration list for PBXNativeTarget "HephaestusTests" */;
 			buildPhases = (
-				C32ACFCE22FF32EE000BEDC7 /* Sources */,
-				C32ACFCF22FF32EE000BEDC7 /* Frameworks */,
-				C32ACFD022FF32EE000BEDC7 /* Resources */,
+				C31732052294EAA9007FED62 /* Sources */,
+				C31732062294EAA9007FED62 /* Frameworks */,
+				C31732072294EAA9007FED62 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C32ACFD422FF32EE000BEDC7 /* PBXTargetDependency */,
+				C317320B2294EAA9007FED62 /* PBXTargetDependency */,
 			);
 			name = HephaestusTests;
 			productName = HephaestusTests;
-			productReference = C32ACFD222FF32EE000BEDC7 /* HephaestusTests.xctest */;
+			productReference = C31732092294EAA9007FED62 /* HephaestusTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		C32ACFDC22FF32EE000BEDC7 /* HephaestusUITests */ = {
+		C31732132294EAA9007FED62 /* HephaestusUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C32ACFEC22FF32EE000BEDC7 /* Build configuration list for PBXNativeTarget "HephaestusUITests" */;
+			buildConfigurationList = C31732232294EAA9007FED62 /* Build configuration list for PBXNativeTarget "HephaestusUITests" */;
 			buildPhases = (
-				C32ACFD922FF32EE000BEDC7 /* Sources */,
-				C32ACFDA22FF32EE000BEDC7 /* Frameworks */,
-				C32ACFDB22FF32EE000BEDC7 /* Resources */,
+				C31732102294EAA9007FED62 /* Sources */,
+				C31732112294EAA9007FED62 /* Frameworks */,
+				C31732122294EAA9007FED62 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C32ACFDF22FF32EE000BEDC7 /* PBXTargetDependency */,
+				C31732162294EAA9007FED62 /* PBXTargetDependency */,
 			);
 			name = HephaestusUITests;
 			productName = HephaestusUITests;
-			productReference = C32ACFDD22FF32EE000BEDC7 /* HephaestusUITests.xctest */;
+			productReference = C31732142294EAA9007FED62 /* HephaestusUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C32ACFB822FF32ED000BEDC7 /* Project object */ = {
+		C31731EF2294EAA8007FED62 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1030;
-				LastUpgradeCheck = 1030;
-				ORGANIZATIONNAME = "Douglas Edan";
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Hoyoun Song";
 				TargetAttributes = {
-					C32ACFBF22FF32ED000BEDC7 = {
-						CreatedOnToolsVersion = 10.3;
+					C31731F62294EAA8007FED62 = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
-					C32ACFD122FF32EE000BEDC7 = {
-						CreatedOnToolsVersion = 10.3;
-						TestTargetID = C32ACFBF22FF32ED000BEDC7;
+					C31732082294EAA9007FED62 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = C31731F62294EAA8007FED62;
 					};
-					C32ACFDC22FF32EE000BEDC7 = {
-						CreatedOnToolsVersion = 10.3;
-						TestTargetID = C32ACFBF22FF32ED000BEDC7;
+					C31732132294EAA9007FED62 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = C31731F62294EAA8007FED62;
 					};
 				};
 			};
-			buildConfigurationList = C32ACFBB22FF32ED000BEDC7 /* Build configuration list for PBXProject "Hephaestus" */;
+			buildConfigurationList = C31731F22294EAA8007FED62 /* Build configuration list for PBXProject "Hephaestus" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -211,36 +249,44 @@
 				en,
 				Base,
 			);
-			mainGroup = C32ACFB722FF32ED000BEDC7;
-			productRefGroup = C32ACFC122FF32ED000BEDC7 /* Products */;
+			mainGroup = C31731EE2294EAA8007FED62;
+			productRefGroup = C31731F82294EAA8007FED62 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C32ACFBF22FF32ED000BEDC7 /* Hephaestus */,
-				C32ACFD122FF32EE000BEDC7 /* HephaestusTests */,
-				C32ACFDC22FF32EE000BEDC7 /* HephaestusUITests */,
+				C31731F62294EAA8007FED62 /* Hephaestus */,
+				C31732082294EAA9007FED62 /* HephaestusTests */,
+				C31732132294EAA9007FED62 /* HephaestusUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C32ACFBE22FF32ED000BEDC7 /* Resources */ = {
+		C31731F52294EAA8007FED62 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C32ACFC822FF32EE000BEDC7 /* Assets.xcassets in Resources */,
-				C32ACFCB22FF32EE000BEDC7 /* Main.storyboard in Resources */,
+				C3347F18229A9BBE00C54954 /* libusersupport.mpack in Resources */,
+				C3347F19229A9BBE00C54954 /* osxinjector.mpack in Resources */,
+				C385D19A22D2370100BBFA77 /* secureboot.mpack in Resources */,
+				C3DB6C722298040E00267C9C /* ButtonPlatform_Start.png in Resources */,
+				C385D1D422D23B9900BBFA77 /* title.png in Resources */,
+				C31731FF2294EAA9007FED62 /* Assets.xcassets in Resources */,
+				C3DB6C76229804D500267C9C /* logo.png in Resources */,
+				C31732022294EAA9007FED62 /* Main.storyboard in Resources */,
+				C385D19822D10DD600BBFA77 /* osxsubstrate.mpack in Resources */,
+				C3DB6C702298040E00267C9C /* ButtonPlatform_Restore.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C32ACFD022FF32EE000BEDC7 /* Resources */ = {
+		C31732072294EAA9007FED62 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C32ACFDB22FF32EE000BEDC7 /* Resources */ = {
+		C31732122294EAA9007FED62 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -250,51 +296,54 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C32ACFBC22FF32ED000BEDC7 /* Sources */ = {
+		C31731F32294EAA8007FED62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C32ACFC622FF32ED000BEDC7 /* ViewController.swift in Sources */,
-				C32ACFC422FF32ED000BEDC7 /* AppDelegate.swift in Sources */,
+				C3D64158229D98ED00F0B5F9 /* CoreLevelCompatibilityLayer.swift in Sources */,
+				C31731FD2294EAA8007FED62 /* ViewController.swift in Sources */,
+				C3DB6C7822998F6600267C9C /* Launchctl_mgr.swift in Sources */,
+				C3347F15229A987A00C54954 /* CorePatcher.swift in Sources */,
+				C31731FB2294EAA8007FED62 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C32ACFCE22FF32EE000BEDC7 /* Sources */ = {
+		C31732052294EAA9007FED62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C32ACFD722FF32EE000BEDC7 /* HephaestusTests.swift in Sources */,
+				C317320E2294EAA9007FED62 /* HephaestusTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C32ACFD922FF32EE000BEDC7 /* Sources */ = {
+		C31732102294EAA9007FED62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C32ACFE222FF32EE000BEDC7 /* HephaestusUITests.swift in Sources */,
+				C31732192294EAA9007FED62 /* HephaestusUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C32ACFD422FF32EE000BEDC7 /* PBXTargetDependency */ = {
+		C317320B2294EAA9007FED62 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C32ACFBF22FF32ED000BEDC7 /* Hephaestus */;
-			targetProxy = C32ACFD322FF32EE000BEDC7 /* PBXContainerItemProxy */;
+			target = C31731F62294EAA8007FED62 /* Hephaestus */;
+			targetProxy = C317320A2294EAA9007FED62 /* PBXContainerItemProxy */;
 		};
-		C32ACFDF22FF32EE000BEDC7 /* PBXTargetDependency */ = {
+		C31732162294EAA9007FED62 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C32ACFBF22FF32ED000BEDC7 /* Hephaestus */;
-			targetProxy = C32ACFDE22FF32EE000BEDC7 /* PBXContainerItemProxy */;
+			target = C31731F62294EAA8007FED62 /* Hephaestus */;
+			targetProxy = C31732152294EAA9007FED62 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C32ACFC922FF32EE000BEDC7 /* Main.storyboard */ = {
+		C31732002294EAA9007FED62 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C32ACFCA22FF32EE000BEDC7 /* Base */,
+				C31732012294EAA9007FED62 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -302,7 +351,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		C32ACFE422FF32EE000BEDC7 /* Debug */ = {
+		C317321B2294EAA9007FED62 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -363,7 +412,7 @@
 			};
 			name = Debug;
 		};
-		C32ACFE522FF32EE000BEDC7 /* Release */ = {
+		C317321C2294EAA9007FED62 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -417,11 +466,10 @@
 			};
 			name = Release;
 		};
-		C32ACFE722FF32EE000BEDC7 /* Debug */ = {
+		C317321E2294EAA9007FED62 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Hephaestus/Hephaestus.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Hephaestus/Info.plist;
@@ -429,17 +477,17 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.douglasedan.Hephaestus;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = private.hysong.Hephaestus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		C32ACFE822FF32EE000BEDC7 /* Release */ = {
+		C317321F2294EAA9007FED62 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Hephaestus/Hephaestus.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Hephaestus/Info.plist;
@@ -447,13 +495,14 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.douglasedan.Hephaestus;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = private.hysong.Hephaestus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
-		C32ACFEA22FF32EE000BEDC7 /* Debug */ = {
+		C31732212294EAA9007FED62 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -466,14 +515,14 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.douglasedan.HephaestusTests;
+				PRODUCT_BUNDLE_IDENTIFIER = private.hysong.HephaestusTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hephaestus.app/Contents/MacOS/Hephaestus";
 			};
 			name = Debug;
 		};
-		C32ACFEB22FF32EE000BEDC7 /* Release */ = {
+		C31732222294EAA9007FED62 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -486,14 +535,14 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.douglasedan.HephaestusTests;
+				PRODUCT_BUNDLE_IDENTIFIER = private.hysong.HephaestusTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hephaestus.app/Contents/MacOS/Hephaestus";
 			};
 			name = Release;
 		};
-		C32ACFED22FF32EE000BEDC7 /* Debug */ = {
+		C31732242294EAA9007FED62 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -505,14 +554,14 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.douglasedan.HephaestusUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = private.hysong.HephaestusUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = Hephaestus;
 			};
 			name = Debug;
 		};
-		C32ACFEE22FF32EE000BEDC7 /* Release */ = {
+		C31732252294EAA9007FED62 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -524,7 +573,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.douglasedan.HephaestusUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = private.hysong.HephaestusUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = Hephaestus;
@@ -534,43 +583,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C32ACFBB22FF32ED000BEDC7 /* Build configuration list for PBXProject "Hephaestus" */ = {
+		C31731F22294EAA8007FED62 /* Build configuration list for PBXProject "Hephaestus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C32ACFE422FF32EE000BEDC7 /* Debug */,
-				C32ACFE522FF32EE000BEDC7 /* Release */,
+				C317321B2294EAA9007FED62 /* Debug */,
+				C317321C2294EAA9007FED62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C32ACFE622FF32EE000BEDC7 /* Build configuration list for PBXNativeTarget "Hephaestus" */ = {
+		C317321D2294EAA9007FED62 /* Build configuration list for PBXNativeTarget "Hephaestus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C32ACFE722FF32EE000BEDC7 /* Debug */,
-				C32ACFE822FF32EE000BEDC7 /* Release */,
+				C317321E2294EAA9007FED62 /* Debug */,
+				C317321F2294EAA9007FED62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C32ACFE922FF32EE000BEDC7 /* Build configuration list for PBXNativeTarget "HephaestusTests" */ = {
+		C31732202294EAA9007FED62 /* Build configuration list for PBXNativeTarget "HephaestusTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C32ACFEA22FF32EE000BEDC7 /* Debug */,
-				C32ACFEB22FF32EE000BEDC7 /* Release */,
+				C31732212294EAA9007FED62 /* Debug */,
+				C31732222294EAA9007FED62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C32ACFEC22FF32EE000BEDC7 /* Build configuration list for PBXNativeTarget "HephaestusUITests" */ = {
+		C31732232294EAA9007FED62 /* Build configuration list for PBXNativeTarget "HephaestusUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C32ACFED22FF32EE000BEDC7 /* Debug */,
-				C32ACFEE22FF32EE000BEDC7 /* Release */,
+				C31732242294EAA9007FED62 /* Debug */,
+				C31732252294EAA9007FED62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C32ACFB822FF32ED000BEDC7 /* Project object */;
+	rootObject = C31731EF2294EAA8007FED62 /* Project object */;
 }

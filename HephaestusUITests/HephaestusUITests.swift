@@ -2,8 +2,8 @@
 //  HephaestusUITests.swift
 //  HephaestusUITests
 //
-//  Created by Hoyoun Song on 11/08/2019.
-//  Copyright © 2019 Douglas Edan. All rights reserved.
+//  Created by Hoyoun Song on 22/05/2019.
+//  Copyright © 2019 Hoyoun Song. All rights reserved.
 //
 
 import XCTest
