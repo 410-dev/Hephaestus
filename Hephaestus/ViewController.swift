@@ -35,8 +35,8 @@ class ViewController: NSViewController {
             if !String(System.getUsername() ?? "nil").elementsEqual("root") {
                 Outlet_ActionStartButton.isEnabled = false
                 Outlet_ActionRevertChange.isEnabled = false
-                Outlet_ActionRevertChange.title = "Error:2"
-                Outlet_ActionStartButton.title = "E:2"
+                Outlet_ActionRevertChange.title = "Error"
+                Outlet_ActionStartButton.title = "0x16"
                 Outlet_StatusMessage.stringValue = "App is NOT running as ROOT ❌"
                 Outlet_StatusMessage.textColor = NSColor(red: 100, green: 100, blue: 100, alpha: 100)
             }else{
@@ -49,11 +49,10 @@ class ViewController: NSViewController {
                     Outlet_ActionStartButton.isEnabled = false
                     Outlet_ActionStartButton.title = "Jailbroken"
                 }
-                if isBackupAvailable() {
+                
+                if isBackupAvailable() && isThisJailbroken() {
                     Outlet_ActionRevertChange.isEnabled = true
                     Outlet_ActionRevertChange.title = "Restore"
-                    Outlet_ActionStartButton.isEnabled = false
-                    Outlet_ActionStartButton.title = "Jailbroken"
                 }else{
                     println("Backup is not available.")
                     Outlet_ActionRevertChange.isEnabled = false
@@ -64,6 +63,12 @@ class ViewController: NSViewController {
                 Outlet_ActionStartButton.title = "Apple Default"
                 Outlet_ActionRevertChange.isEnabled = false
                 Outlet_ActionRevertChange.title = "Apple Default"
+            }else{
+                if !isBackupAvailable() {
+                    println("Backup is not available.")
+                    Outlet_ActionRevertChange.isEnabled = false
+                    Outlet_ActionRevertChange.title = "No Backup"
+                }
             }
             
             NSEvent.addLocalMonitorForEvents(matching: .keyDown) {
@@ -75,6 +80,11 @@ class ViewController: NSViewController {
             }
         }
         super.viewDidLoad()
+    }
+    
+    func disableAllButton() {
+        Outlet_ActionRevertChange.isEnabled = false
+        Outlet_ActionStartButton.isEnabled = false
     }
 
     override var representedObject: Any? {
@@ -104,12 +114,17 @@ class ViewController: NSViewController {
     }
     
     func bootstrapResourceInstalled() -> Bool {
-        return false
+        let mpkgdb = "/usr/local/mpkglib/db/"
+        if !System.checkFile(pathway: mpkgdb + "libusersupport") || !System.checkFile(pathway: mpkgdb + "com.zeone.osxsubstrate"){
+            return false
+        }else{
+            return true
+        }
     }
     
     @IBAction func ActionStart(_ sender: Any) {
-        Outlet_ActionStartButton.isEnabled = false
-        if isBackupAvailable() {
+        disableAllButton()
+        if !isBackupAvailable() {
             println("Making backup...")
             breakUserView("Making Backup")
             System.silentsh(bin + "backup", "make", backupPath)
@@ -148,7 +163,9 @@ class ViewController: NSViewController {
                 breakUserView("Refresh")
                 System.silentsh(bin + "refreshui")
             }else{
-                breakUserView("Err:2")
+                breakUserView("Error")
+                restoreUserView("0x17")
+                Outlet_ActionRevertChange.isEnabled = false
                 println("Components missing!")
                 Graphics.msgBox_errorMessage(title: "Missing Components", contents: "Core components are failed to install.")
                 exit(-9)
@@ -200,6 +217,7 @@ class ViewController: NSViewController {
     }
     
     @IBAction func ActionRestore(_ sender: Any) {
+        disableAllButton()
         if isThisJailbroken() {
             restoreUserView("Restoring")
             println("Restoring...")
