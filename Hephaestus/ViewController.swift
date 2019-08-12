@@ -32,11 +32,6 @@ class ViewController: NSViewController {
                 Graphics.msgBox_errorMessage(title: "Missing Library", contents: "Resource is not available.")
                 exit(-9)
             }
-            if isBackupAvailable() {
-                println("Backup is not available.")
-                Outlet_ActionRevertChange.isEnabled = false
-                Outlet_ActionRevertChange.title = "NO BACKUP"
-            }
             if !String(System.getUsername() ?? "nil").elementsEqual("root") {
                 Outlet_ActionStartButton.isEnabled = false
                 Outlet_ActionRevertChange.isEnabled = false
@@ -49,16 +44,26 @@ class ViewController: NSViewController {
                 Outlet_StatusMessage.textColor = NSColor(red: 100, green: 100, blue: 100, alpha: 100)
             }
             
-            if !isThisKISImage() {
+            if isThisJailbroken() || isBackupAvailable() {
+                if isThisJailbroken() {
+                    Outlet_ActionStartButton.isEnabled = false
+                    Outlet_ActionStartButton.title = "Jailbroken"
+                }
+                if isBackupAvailable() {
+                    Outlet_ActionRevertChange.isEnabled = true
+                    Outlet_ActionRevertChange.title = "Restore"
+                    Outlet_ActionStartButton.isEnabled = false
+                    Outlet_ActionStartButton.title = "Jailbroken"
+                }else{
+                    println("Backup is not available.")
+                    Outlet_ActionRevertChange.isEnabled = false
+                    Outlet_ActionRevertChange.title = "No Backup"
+                }
+            }else if !isThisKISImage() {
                 Outlet_ActionStartButton.isEnabled = false
                 Outlet_ActionStartButton.title = "Apple Default"
                 Outlet_ActionRevertChange.isEnabled = false
                 Outlet_ActionRevertChange.title = "Apple Default"
-            }
-            
-            if isThisJailbroken() {
-                Outlet_ActionStartButton.isEnabled = false
-                Outlet_ActionStartButton.title = "Jailbroken"
             }
             
             NSEvent.addLocalMonitorForEvents(matching: .keyDown) {
