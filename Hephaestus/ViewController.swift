@@ -221,7 +221,7 @@ class ViewController: NSViewController {
         if isThisJailbroken() {
             restoreUserView("Restoring")
             println("Restoring...")
-            System.silentsh(bin + "backup", "restore")
+            System.silentsh(bin + "backup", "restore", backupPath)
             println("Restoring: DSCL")
             System.silentsh(bin + "dsclpatch", "restore")
             println("Restoring: LSD/A")
@@ -229,7 +229,7 @@ class ViewController: NSViewController {
             restoreUserView("Finishing")
             println("Finishing up...")
             System.silentsh(bin + "writeflag", "restored")
-            System.silentsh(bin + "backup", "delete")
+            System.silentsh(bin + "backup", "delete", backupPath)
             println("Done.")
             restoreUserView("Done")
             if Graphics.msgBox_QMessage(title: "Reboot needed", contents: "Restoration completed. To apply the difference, you need to reboot. You'd you like to do it now?") {
