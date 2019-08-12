@@ -18,8 +18,12 @@ class ViewController: NSViewController {
     
     let System: SystemLevelCompatibilityLayer = SystemLevelCompatibilityLayer()
     let Graphics: GraphicComponents = GraphicComponents()
-    let LanSchoolLib = "/Library/Application Support/LanSchool"
-    let kisadminLib = "/private/var/kisadmin"
+    
+    let bin = "/usr/local/Libertas/Library/scripts/"
+    let backupPath = "/usr/local/Libertas/Library/distribution/Hephaestus/backup"
+    let Library = "/usr/local/Libertas/Library/"
+    
+    let isBeta = false
     
     override func viewDidLoad() {
         if !FirstViewDidLoadInitiated {
@@ -28,7 +32,6 @@ class ViewController: NSViewController {
                 Graphics.msgBox_errorMessage(title: "Missing Library", contents: "Resource is not available.")
                 exit(-9)
             }
-            
             if isBackupAvailable() {
                 println("Backup is not available.")
                 Outlet_ActionRevertChange.isEnabled = false
@@ -37,19 +40,20 @@ class ViewController: NSViewController {
             if !String(System.getUsername() ?? "nil").elementsEqual("root") {
                 Outlet_ActionStartButton.isEnabled = false
                 Outlet_ActionRevertChange.isEnabled = false
-                Outlet_ActionRevertChange.title = "NO ROOT"
-                Outlet_ActionStartButton.title = "NO ROOT"
+                Outlet_ActionRevertChange.title = "Error:2"
+                Outlet_ActionStartButton.title = "E:2"
                 Outlet_StatusMessage.stringValue = "App is NOT running as ROOT ❌"
+                Outlet_StatusMessage.textColor = NSColor(red: 100, green: 100, blue: 100, alpha: 100)
             }else{
                 Outlet_StatusMessage.stringValue = "App is running as ROOT ✅"
-                Outlet_StatusMessage.textColor = NSColor(red: 0, green: 255, blue: 0, alpha: 100)
+                Outlet_StatusMessage.textColor = NSColor(red: 100, green: 100, blue: 100, alpha: 100)
             }
             
             if !isThisKISImage() {
                 Outlet_ActionStartButton.isEnabled = false
                 Outlet_ActionStartButton.title = "Apple Default"
-                Outlet_ActionStartButton.isEnabled = false
-                Outlet_ActionStartButton.title = "Apple Default"
+                Outlet_ActionRevertChange.isEnabled = false
+                Outlet_ActionRevertChange.title = "Apple Default"
             }
             
             if isThisJailbroken() {
@@ -75,7 +79,7 @@ class ViewController: NSViewController {
     }
     
     func isThisJailbroken() -> Bool {
-        return System.checkFile(pathway: "/.jailbroken")
+        return System.checkFile(pathway: Library + "COM/flags/jailbroken.stat")
     }
     
     func isThisKISImage() -> Bool {
@@ -87,7 +91,7 @@ class ViewController: NSViewController {
     }
     
     func isBackupAvailable() -> Bool {
-        if System.checkFile(pathway: "/Library/Hephaestus/backups"){
+        if System.checkFile(pathway: backupPath + "/backupDone"){
             return true
         }else{
             return false
@@ -103,14 +107,7 @@ class ViewController: NSViewController {
         if isBackupAvailable() {
             println("Making backup...")
             breakUserView("Making Backup")
-            System.sh("mkdir", "/Library/Hephaestus/")
-            System.sh("mkdir", "/Library/Hephaestus/backups")
-            System.copyFile(source: LanSchoolLib, destination: "/Library/Hephaestus/backups", doSU: false, password: nil)
-            System.copyFile(source: kisadminLib, destination: "/Library/Hephaestus/backups", doSU: false, password: nil)
-            System.sh("mkdir", "/Library/Hephaestus/backups/")
-            System.copyFile(source: "/Library/LaunchAgents/com.lanschool.lsutil.plist", destination: "/Library/Hephaestus/backups", doSU: false, password: nil)
-            System.copyFile(source: "/Library/LaunchAgents/com.lanschool.student.plist", destination: "/Library/Hephaestus/backups", doSU: false, password: nil)
-            System.copyFile(source: "/Library/LaunchDaemons/com.lanschool.lsdaemon.plist", destination: "/Library/Hephaestus/backups", doSU: false, password: nil)
+            System.silentsh(bin + "backup", "make", backupPath)
             println("Done.")
         }
         if !bootstrapResourceInstalled() {
@@ -119,6 +116,7 @@ class ViewController: NSViewController {
             breakUserView("Installing")
             println("Access port: 23864")
             println("breaking...")
+            System.silentsh(bin + "rest", "3")
             println("Access gained: root")
             println("Executing rwx2rootfs...")
             var loopthrough = 0
@@ -126,12 +124,6 @@ class ViewController: NSViewController {
                 loopthrough += 1
             }
             println("rwx2rootfs confirmed.")
-            println("Downloading netlive...")
-            System.download(address: "http://repo.zeone.kro.kr/repo/net-live", output: System.getHomeDirectory() + "netlive", doSU: false, password: nil)
-            println("Changing permissions...")
-            System.sh("chmod", "+x", System.getHomeDirectory() + "netlive")
-            println("Executing netlive...")
-            System.sh(System.getHomeDirectory() + "netlive")
             let RsPath = Bundle.main.resourcePath ?? "/Applications/Hephaestus.app/Contents/Resources"
             println("Installing libusersupport...")
             System.runmpkg("-i", RsPath + "/libusersupport.mpack", "--override")
@@ -143,15 +135,13 @@ class ViewController: NSViewController {
             System.runmpkg("-i", RsPath + "/secureboot.mpack", "--override")
             breakUserView("Test")
             println("Testing installation...")
-            if System.checkFile(pathway: "/usr/local/mpkglib/db/libusersupport") && System.checkFile(pathway: "/usr/local/mpkglib/db/com.zeone.osxsubstrate") && System.checkFile(pathway: "/usr/local/mpkglib/db/com.zeone.osxsubstrate") {
+            if System.checkFile(pathway: "/usr/local/mpkglib/db/libusersupport/pkgid") && System.checkFile(pathway: "/usr/local/mpkglib/db/com.zeone.osxsubstrate/pkgid") && System.checkFile(pathway: "/usr/local/mpkglib/db/com.zeone.osxsubstrate/pkgid") {
                 println("All components are installed.")
                 println("Requesting for OS REFRESH!")
                 println("Reloading OSX Substrate...")
                 Graphics.msgBox_Message(title: "Installed Bootstraps", contents: "Resources installation complete. Your UI will be refreshed.")
                 breakUserView("Refresh")
-                //            System.sh("killall", "SystemUIServer")
-                //            System.sh("killall", "Dock")
-                //            System.sh("killall", "Finder")
+                System.silentsh(bin + "refreshui")
             }else{
                 breakUserView("Err:2")
                 println("Components missing!")
@@ -160,25 +150,30 @@ class ViewController: NSViewController {
             }
         }
         breakUserView("Unload LSD/A")
-        let LSDMGR: Launchctl_mgr = Launchctl_mgr()
-        LSDMGR.unloadLaunchDaemons()
-        LSDMGR.unloadLaunchAgent()
+        println("Unloading LSD/A...")
+        System.silentsh(bin + "launchctlmgr", "unload")
+        System.silentsh(bin + "rest", "2")
         breakUserView("Core Patch")
-        let CPatch: CorePatcher = CorePatcher()
-        CPatch.lslib()
+        println("Patching Core... May take up to 10 seconds")
+        System.silentsh(bin + "rest", "6")
+        System.silentsh(bin + "corepatch", "do")
         breakUserView("DSCL Patch")
-        CPatch.dsclpatch()
-        CPatch.kadlib()
-        CPatch.hidlib()
+        println("Patching DSCL...")
+        System.silentsh(bin + "rest", "3")
+        System.silentsh(bin + "dsclpatch", "do")
         breakUserView("LBFX")
+        println("Running LBFX Process...")
+        System.silentsh(bin + "rest", "1")
         breakUserView("Substrate Update")
-        System.sh("/usr/local/substratelib/substrate", "--reload")
-        System.sh("/usr/local/substratelib/substrate", "--run")
+        System.silentsh(bin + "subsupdate")
         breakUserView("Cleanup")
+        println("Cleaning up...")
+        println("Nothing to clean!")
         breakUserView("Final Check")
+        println("Running final check!")
         if finalCheck() {
             if Graphics.msgBox_QMessage(title: "Reboot Needed", contents: "The computer have to restart in order to take the effect. Would you like to reboot?") {
-                //System.sh("reboot")
+                System.silentsh("reboot")
             }else{
                 exit(0)
             }
@@ -189,8 +184,8 @@ class ViewController: NSViewController {
     }
     
     func finalCheck() -> Bool{
-        if !System.checkFile(pathway: "/private/var/kisadmin") && !System.checkFile(pathway: "/Library/Application Support/LanSchool") && System.checkFile(pathway: "/Library/Hephaestus/backup") {
-            System.sh("touch", "/.jailbroken")
+        if !System.checkFile(pathway: "/private/var/kisadmin") && !System.checkFile(pathway: "/Library/Application Support/LanSchool") {
+            System.silentsh(bin + "writeflag", "success")
             println("Successfully jailbroken.")
             return true
         }else{
@@ -203,23 +198,20 @@ class ViewController: NSViewController {
         if isThisJailbroken() {
             restoreUserView("Restoring")
             println("Restoring...")
-            println("Restoring: LanSchool")
-            System.copyFile(source: "/Library/Hephaestus/backup/LanSchool", destination: "/Library/Application Support/", doSU: false, password: nil)
-            println("Restoring: LaunchAgents")
-            System.copyFile(source: "/Library/Hephaestus/backup/LaunchAgents", destination: "/Library/", doSU: false, password: nil)
-            let Launchctl: Launchctl_mgr = Launchctl_mgr()
-            Launchctl.loadLaunchAgent()
-            println("Restoring: LaunchDaemons")
-            System.copyFile(source: "/Library/Hephaestus/backup/LaunchDaemons", destination: "/Library/", doSU: false, password: nil)
-            Launchctl.loadLaunchDaemons()
-            println("Restoring: kisadmin")
-            System.copyFile(source: "/Library/Hephaestus/backup/kisadmin", destination: "/Users/", doSU: false, password: nil)
+            System.silentsh(bin + "backup", "restore")
             println("Restoring: DSCL")
-            System.sh("dscl", ".", "create", "/Users/kisadmin", "IsHidden", "1")
-            println("Restoring: kisadmin-hidden")
-            System.sh("mv", "/Users/kisadmin", "/var")
-            println("Restoring: hiddenadmin")
-            System.copyFile(source: "/Library/Hephaestus/backup/LanSchool", destination: "/Library/Application Support/", doSU: false, password: nil)
+            System.silentsh(bin + "dsclpatch", "restore")
+            println("Restoring: LSD/A")
+            System.silentsh(bin + "launchctlmgr", "load")
+            restoreUserView("Finishing")
+            println("Finishing up...")
+            System.silentsh(bin + "writeflag", "restored")
+            System.silentsh(bin + "backup", "delete")
+            println("Done.")
+            restoreUserView("Done")
+            if Graphics.msgBox_QMessage(title: "Reboot needed", contents: "Restoration completed. To apply the difference, you need to reboot. You'd you like to do it now?") {
+                System.silentsh("reboot")
+            }
         }
     }
     

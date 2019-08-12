@@ -13,7 +13,6 @@
 		C31732022294EAA9007FED62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C31732002294EAA9007FED62 /* Main.storyboard */; };
 		C317320E2294EAA9007FED62 /* HephaestusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C317320D2294EAA9007FED62 /* HephaestusTests.swift */; };
 		C31732192294EAA9007FED62 /* HephaestusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31732182294EAA9007FED62 /* HephaestusUITests.swift */; };
-		C3347F15229A987A00C54954 /* CorePatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3347F14229A987A00C54954 /* CorePatcher.swift */; };
 		C3347F18229A9BBE00C54954 /* libusersupport.mpack in Resources */ = {isa = PBXBuildFile; fileRef = C317322C22950CF6007FED62 /* libusersupport.mpack */; };
 		C3347F19229A9BBE00C54954 /* osxinjector.mpack in Resources */ = {isa = PBXBuildFile; fileRef = C317322D22950CF6007FED62 /* osxinjector.mpack */; };
 		C385D19822D10DD600BBFA77 /* osxsubstrate.mpack in Resources */ = {isa = PBXBuildFile; fileRef = C385D19722D10DD600BBFA77 /* osxsubstrate.mpack */; };
@@ -23,7 +22,6 @@
 		C3DB6C702298040E00267C9C /* ButtonPlatform_Restore.png in Resources */ = {isa = PBXBuildFile; fileRef = C3DB6C6C2298040E00267C9C /* ButtonPlatform_Restore.png */; };
 		C3DB6C722298040E00267C9C /* ButtonPlatform_Start.png in Resources */ = {isa = PBXBuildFile; fileRef = C3DB6C6E2298040E00267C9C /* ButtonPlatform_Start.png */; };
 		C3DB6C76229804D500267C9C /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C3DB6C75229804D500267C9C /* logo.png */; };
-		C3DB6C7822998F6600267C9C /* Launchctl_mgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DB6C7722998F6600267C9C /* Launchctl_mgr.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +57,6 @@
 		C317321A2294EAA9007FED62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C317322C22950CF6007FED62 /* libusersupport.mpack */ = {isa = PBXFileReference; lastKnownFileType = file; path = libusersupport.mpack; sourceTree = "<group>"; };
 		C317322D22950CF6007FED62 /* osxinjector.mpack */ = {isa = PBXFileReference; lastKnownFileType = file; path = osxinjector.mpack; sourceTree = "<group>"; };
-		C3347F14229A987A00C54954 /* CorePatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorePatcher.swift; sourceTree = "<group>"; };
 		C385D19722D10DD600BBFA77 /* osxsubstrate.mpack */ = {isa = PBXFileReference; lastKnownFileType = file; path = osxsubstrate.mpack; sourceTree = "<group>"; };
 		C385D19922D236F400BBFA77 /* secureboot.mpack */ = {isa = PBXFileReference; lastKnownFileType = file; path = secureboot.mpack; sourceTree = "<group>"; };
 		C385D1D322D23B9800BBFA77 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
@@ -67,7 +64,6 @@
 		C3DB6C6C2298040E00267C9C /* ButtonPlatform_Restore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonPlatform_Restore.png; sourceTree = "<group>"; };
 		C3DB6C6E2298040E00267C9C /* ButtonPlatform_Start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonPlatform_Start.png; sourceTree = "<group>"; };
 		C3DB6C75229804D500267C9C /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
-		C3DB6C7722998F6600267C9C /* Launchctl_mgr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launchctl_mgr.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,13 +124,11 @@
 			children = (
 				C31731FA2294EAA8007FED62 /* AppDelegate.swift */,
 				C31731FC2294EAA8007FED62 /* ViewController.swift */,
-				C3DB6C7722998F6600267C9C /* Launchctl_mgr.swift */,
 				C31731FE2294EAA9007FED62 /* Assets.xcassets */,
 				C31732002294EAA9007FED62 /* Main.storyboard */,
 				C31732032294EAA9007FED62 /* Info.plist */,
 				C3D64157229D98ED00F0B5F9 /* CoreLevelCompatibilityLayer.swift */,
 				C31732042294EAA9007FED62 /* Hephaestus.entitlements */,
-				C3347F14229A987A00C54954 /* CorePatcher.swift */,
 			);
 			path = Hephaestus;
 			sourceTree = "<group>";
@@ -302,8 +296,6 @@
 			files = (
 				C3D64158229D98ED00F0B5F9 /* CoreLevelCompatibilityLayer.swift in Sources */,
 				C31731FD2294EAA8007FED62 /* ViewController.swift in Sources */,
-				C3DB6C7822998F6600267C9C /* Launchctl_mgr.swift in Sources */,
-				C3347F15229A987A00C54954 /* CorePatcher.swift in Sources */,
 				C31731FB2294EAA8007FED62 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
