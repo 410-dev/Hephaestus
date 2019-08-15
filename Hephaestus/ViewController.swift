@@ -24,13 +24,29 @@ class ViewController: NSViewController {
     let Library = "/usr/local/Libertas/Library/"
     
     let isBeta = false
+    let minimumOSV = "10.14"
+    let maximumOSV = "10.14"
     
     override func viewDidLoad() {
         if !FirstViewDidLoadInitiated {
             print("Hephaestus - LanSchool Breaker for macOS 10.14")
+            println("Checking compatibility...")
             if !isResourceAvailable() {
-                Graphics.msgBox_errorMessage(title: "Missing Library", contents: "Resource is not available.")
+                Graphics.msgBox_errorMessage(title: "Missing Library", contents: "Unable to access CoreBinaries DB. Please install libertasapi = 10.14-x.")
                 exit(-9)
+            }
+            print("[LIBERTAS] Library access authorized. User: root")
+            let apiCompatibility = System.readFile(pathway: Library + "COM/compatibility/major")
+            let currentVersion = System.readFile(pathway: Library + "COM/compatibility/systemv")
+            if !currentVersion.starts(with: minimumOSV) || !currentVersion.starts(with: maximumOSV) {
+                println("System incompatible.")
+                Graphics.msgBox_errorMessage(title: "Incompatible System", contents: "Your system's major release must be " + maximumOSV + ", but your system is " + currentVersion + ". Cannot continue.");
+                exit(-7)
+            }
+            if !currentVersion.starts(with: apiCompatibility) {
+                println("API incompatible.")
+                Graphics.msgBox_errorMessage(title: "Incompatible API", contents: "Libertas API is not compatible. API supports " + apiCompatibility + ", but your system is " + currentVersion + ".")
+                exit(-8)
             }
             if !String(System.getUsername() ?? "nil").elementsEqual("root") {
                 Outlet_ActionStartButton.isEnabled = false
@@ -102,7 +118,7 @@ class ViewController: NSViewController {
     }
     
     func isResourceAvailable() -> Bool {
-        return true
+        return System.checkFile(pathway: Library)
     }
     
     func isBackupAvailable() -> Bool {
