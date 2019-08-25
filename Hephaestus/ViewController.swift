@@ -32,7 +32,7 @@ class ViewController: NSViewController {
             print("Hephaestus - LanSchool Breaker for macOS 10.14")
             println("Checking compatibility...")
             if !isResourceAvailable() {
-                Graphics.msgBox_errorMessage(title: "Missing Library", contents: "Unable to access CoreBinaries DB. Please install libertasapi = 10.14-x.")
+                Graphics.msgBox_errorMessage(title: "Missing Library", contents: "Unable to access CoreBinaries DB. Please install libertasapi = 10.14-x.0")
                 exit(-9)
             }
             print("[LIBERTAS] Library access authorized. User: root")
